@@ -1,4 +1,4 @@
-const dataUrl = '../../../../public/projects.json';
+const dataUrl = 'projects.json';
 const activeClass = 'is-active';
 const cardsContainer = document.querySelector('[data-project="parent"]');
 const cardTemplate = document.querySelector('[data-template="project-card"]');
