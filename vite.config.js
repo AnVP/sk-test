@@ -22,11 +22,16 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./source', import.meta.url))
-    }
+    },
   },
   optimizeDeps: {
     esbuildOptions: {
       target: 'esnext'
-    }
+    },
+  },
+  esbuild: {
+    supported: {
+      'top-level-await': true
+    },
   },
 })
