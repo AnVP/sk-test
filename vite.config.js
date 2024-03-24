@@ -17,6 +17,7 @@ export default defineConfig({
         data: resolve(__dirname, 'data.html'),
       },
     },
+    target: 'esnext',
   },
   resolve: {
     alias: {
